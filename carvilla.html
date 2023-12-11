@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carvilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
+    
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width:1500px;
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+            text-transform: capitalize;
+            
+        }
+        /* navbar */
+        .article-0{
+            background-image: url(/car-model-img/welcome-banner.jpg);
+            opacity: 0.7 black;
+            background-size: cover;
+        }
+        .article-0 a:hover{
+            color: rgb(151, 151, 233);
+        }
+        
+        .main-navbar{
+            display: flex;
+            justify-content: center;
+            column-gap: 380px;
+            padding: 20px;
+            background-color: rgb(1, 1, 38) ;
+            opacity: 0.5;
+            
+           
+        }
+        .nav-2 ul{
+            display: flex;
+            column-gap: 25px;
+            padding: 20px;
+            font-size: 20px;
+            z-index: 1;
+        }
+        .nav-1{
+            padding: 12px;
+            font-size: 30px;
+            
+           
+        }
+        .main-navbar ul li{
+            list-style: none;
+        }
+        .main-navbar a{
+            text-decoration: none;
+            color: rgb(246, 244, 244);
+        }
+        /* sub-section for nav bar */
+        .main-content-2{
+            text-align: center;
+            padding:200px 0 320px ;
+            color: white;
+            background-color: rgb(1, 1, 38) ;
+            opacity: 0.5;
+            position: relative;
+            /* border: 1px solid red; */
+        }
+        .main-content-2 h1{
+            padding-bottom: 30px;
+            font-size: 40px;
+        }
+        .main-content-2 a{
+            text-decoration: none;
+            border: 1px solid rgb(135, 155, 235);
+            padding: 15px 50px 15px 50px;
+            background-color: rgb(0, 72, 255);
+            color: white;
+            border-radius: 5px;
+        }
+        .main-content-2 p{
+            padding-bottom: 60px;
+
+        }
+        .span{
+            padding-top: 10px;
+        }
+        /* section-1 */
+        .article-1{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            align-items: center;
+            border: 1px solid rgb(216, 215, 215);
+            border-radius: 10px;
+            width: 1200px;
+            position: absolute;
+            top: 650px;
+            left:180px;
+            background-color: white;
+            
+
+            
+        }
+        .form-1{
+            padding: 40px 0 40px 0;
+        }
+        .form-2{
+            padding: 10px 0 40px 0;
+        }
+        .form-3{
+            padding: 40px 0 40px 0;
+        }
+        .form-4{
+            padding: 10px 0 40px 0;
+        }
+        .form-5{
+            padding: 40px 0 40px 0;
+        }
+        .form-6{
+            padding: 10px 0 40px 0;
+        }
+        .serach-{
+           
+            border: 1px solid rgb(135, 155, 235);
+            padding: 15px 50px 15px 50px;
+            background-color: rgb(0, 72, 255);
+            color: white;
+            border-radius: 5px;
+
+        }
+        .serach- a{
+            color: white;
+        }
+        select{
+            border: none;
+            background-color: rgb(241, 237, 237);
+            padding: 15px 35px ;
+            opacity: 0.6;
+            font-size: 20px;
+
+        }
+        .article-1 h3{
+            padding-bottom: 15px;
+            opacity: 0.7;
+        }
+        .serach- a{
+            text-decoration: none;
+
+        }
+
+        /* section-2 */
+        .article-2{
+            padding: 300px 80px 50px 80px ;
+        }
+        .main-content-3{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        .sub-1{
+            padding-block: 40px;
+            padding-inline: 30px;
+            flex: 0 0 25%;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            width: 400px;
+            height: 430px;
+        }
+        .sub-1 p{
+            padding-block: 25px 20px;
+        }
+        .main-content-3 img{
+            width: 60px;
+            height: 60px;
+            margin: 20px;
+            
+        }
+        .main-content-3 a{
+            text-decoration: none;
+            color: black
+            
+        }
+        .sub-1 h5{
+            width: 18px;
+            border-bottom: 3px solid rgb(29, 29, 237);
+            padding-block: 20px;
+            margin-inline: 170px;
+        }
+        .sub-1:hover{
+            background-color:  rgb(53, 53, 227);
+            color: white;
+           
+            
+        }
+
+        /* article-3 */
+
+        .article-3{
+            padding: 50px 80px 50px 80px;
+            background-color: gainsboro;
+        }
+        .menu{
+            text-align: center;
+           
+        }
+        .menu h1{
+            padding-block: 10px;
+            font-size: 40px;
+            opacity: 0.7;
+           
+        }
+        .minimize h5{
+            width: 75px;
+            border-bottom: 2px solid rgb(29, 29, 237);
+            padding-block: 10px;
+            margin-inline: 630px;
+        }
+        .main-car{
+            padding-block: 150px;
+            /* display: flex; */
+           
+            
+        }
+        .car{
+            display: flex;
+            justify-content: center;
+            padding-block: 40px;
+            column-gap: 50px;
+            flex: 0 0 100%;
+        }
+        .img{
+            flex: 0 0 30%;
+        }
+        .content{
+            flex: 0 0 25%;
+          
+        }
+        .content a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.7;
+            font-size: 30px;
+        }
+        .content p{
+            padding-block: 15px 25px;
+            line-height: 30px;
+            opacity: 0.7;
+        }
+        .attern a{
+            text-decoration: none;
+            border: 1px solid rgb(135, 155, 235);
+            padding: 10px 22px 10px 20px;
+            background-color: rgb(0, 72, 255);
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        /* section-4 */
+        .article-4{
+            padding: 50px 150px 50px 150px;
+        }
+        .menu-1{
+            text-align: center;
+           
+        }
+        .menu-1 h1{
+            padding-block: 10px;
+            font-size: 40px;
+            opacity: 0.7;
+           
+        }
+        .minimize-1 h5{
+            width: 75px;
+            border-bottom: 2px solid rgb(29, 29, 237);
+            padding-block: 10px;
+            margin-inline: 550px;
+        }
+
+        .feature-car{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            justify-content: center;
+            row-gap: 10px;
+            padding-block: 60px 30px;
+        }
+        .modelcar{
+            flex: 0 0 10%;
+        }
+
+        .feature-car a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.6;
+        }
+        .car-img{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            height: 250px;
+            text-align: center;
+            padding-block: 80px;
+
+        }
+        .content-p{
+            border-bottom: 1px solid gainsboro;
+            border-left: 1px solid gainsboro;
+            border-right: 1px solid gainsboro;
+            padding: 10px;
+            opacity: 0.7;
+           
+        }
+        .modelcar h1{
+            padding-block: 10px;
+        }
+        .modelcar p{
+            padding-block: 5px;
+            opacity: 0.7;
+        }
+        /* SECTION-5 */
+        .article-5{
+            padding: 50px 80px 50px 80px;
+            background-color: rgb(252, 249, 249);
+        }
+        .menu-1{
+            text-align: center;
+           
+        }
+        .menu-1 h1{
+            padding-block: 10px;
+            font-size: 40px;
+            opacity: 0.7;
+           
+        }
+        .minimize-2 h5{
+            width: 85px;
+            border-bottom: 2px solid rgb(29, 29, 237);
+            padding-block: 10px;
+            margin-inline: 630px;
+        }
+        .main-client{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-block: 90px 50px;
+
+        }
+
+        .client{
+            padding-block: 40px;
+            padding-inline: 30px;
+            flex: 0 0 25%;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            width: 400px;
+            height: 450px;
+        }
+        .client p{
+            padding-block: 25px 20px;
+        }
+        .main-content-3 img{
+            width: 60px;
+            height: 60px;
+            margin: 20px;
+            
+        }
+        .main-client a{
+            text-decoration: none;
+            color: black
+            
+        }
+        .client:hover{
+            background-color: rgb(66, 66, 201);
+            color: antiquewhite;
+        }
+
+        /* section-6 */
+        .article-6{
+            padding: 50px 80px 50px 80px;
+
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            column-gap: 70px;
+            padding-block: 80px
+        }
+
+        /* footer */
+        .article-7{
+            padding: 50px 80px 50px 80px;
+            background-color: rgb(37, 37, 65);
+        }
+        .main-footer{
+            display: flex;
+            justify-content: center;
+            column-gap: 50px;
+            color: white;
+        }
+         
+        .foot-1{
+            flex: 0 0 15%;
+        }
+        .foot-2{
+            flex: 0 0 10%;
+        }
+        .foot-3{
+            flex: 0 0 10%;
+        }
+        .foot-4{
+            flex: 0 0 10%;
+            padding-block: 40px;
+        }
+        .foot-5{
+            flex: 0 0 17%;
+        }
+        .p-tag{
+            padding-block: 20px ;
+            opacity: 0.6;
+        }
+        
+        .foot-1 h2{
+            padding-block: 10px;
+        }
+        .main-footer a{
+            text-decoration: none;
+            color: white;
+            opacity: 0.6;
+            font-weight: 300;
+        }
+        
+        .main-footer ul li{
+            list-style: none;
+            padding-block: 7px;
+        }
+        .main-footer h3{
+            padding-block: 10px;
+        }
+        .foot-5 p{
+            padding-block:0 10px;
+            opacity: 0.6;
+        
+        }
+        input{
+            border: 1px solid rgb(1, 1, 26);
+            padding: 10px 0px 10px 40px;
+            text-align: start;
+            background-color: rgb(1, 1, 19);
+            border-radius: 5px;
+            color: white;
+        }
+        .foot-1 p{
+            opacity: 0.6;
+            
+        }
+         a:hover{
+          color: rgb(248, 161, 161);
+        }
+        .slick-initialized .slick-slide{
+            display: flex;
+        }
+        
+        
+        /* the end */
+        
+
+
+       
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="article-0">
+                <div class="main-navbar">
+                    <div class="nav-1">
+                        <ul>
+                            <li><a href="">carvilla</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-2">
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">service</a></li>
+                            <li><a href="">featured cars</a></li>
+                            <li><a href="">new cars</a></li>
+                            <li><a href="">brands</a></li>
+                            <li><a href="">contact</a></li>    
+                        </ul>
+                    </div>
+                </div>
+                 <div class="main-content-2">
+                    <h1 data-aos="fade-up" data-aos-duration="1800">GET YOUR DESIRED CAR IN RESONABLE PRICE</h1>
+                    <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam facilis cum animi <br> <span class="span">beatae quidem aliquid asperiores provident ipsum omnis</span></p>
+                    <div class="animated-a" data-aos="fade-down" data-aos-duration="1800">
+                        <a href=""  >contact us</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+   
+    <section>
+        <div class="container">
+            <div class="article-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="main-form-1">
+                    <div class="form-1">
+                        <h3>select year</h3>
+                        <select name="year" id="">
+                        <option value="year">year</option>
+                        <option value="year">2017</option>
+                        <option value="year">2018</option>
+                        <option value="year">2019</option>
+                        </select>
+                    </div>
+                    <div class="form-2">
+                        <h3>select year</h3>
+                        <select name="style" id="">
+                        <option value="year">style</option>
+                        <option value="year">sedan</option>
+                        <option value="year">van</option>
+                        <option value="year">roadster</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="main-form-2">
+                    <div class="form-3">
+                        <h3>select make</h3>
+                        <select name="make" id="">
+                        <option value="year">make</option>
+                        <option value="year">toyota</option>
+                        <option value="year">holden</option>
+                        <option value="year">maecedes-benz</option>
+                        </select>
+                    </div>
+                    <div class="form-4">
+                        <h3>car condition</h3>
+                        <select name="condition" id="">
+                        <option value="year">condition</option>
+                        <option value="year">something</option>
+                        <option value="year">something</option>
+                        <option value="year">something</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="main-form-3">
+                    <div class="form-5">
+                        <h3>select model</h3>
+                        <select name="model" id="">
+                        <option value="year">model</option>
+                        <option value="year">kia-rio</option>
+                        <option value="year">mitsubihi</option>
+                        <option value="year">ford</option>
+                        </select>
+                    </div>
+                    <div class="form-6">
+                        <h3>select price</h3>
+                        <select name="condition" id="">
+                        <option value="year">price</option>
+                        <option value="year">$0.00</option>
+                        <option value="year">$0.00</option>
+                        <option value="year">$0.00</option>
+                        </select>
+                    </div>
+                   
+                 </div>
+                 <div class="serach-">
+                    <a href="">search</a>
+                    </div>
+                </div>
+           
+            </div>
+        </section>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="article-2">
+                <div class="main-content-3" data-aos="slide-up-rihgt">
+                    <div class="sub-1" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="/finexo.html/w2.png" alt="">
+                        <h2><a href="">Largest Dealership of Car</a></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel architecto necessitatibus adipisci dolorem dolorum asperiores?</p>
+                        <h5></h5>
+                                        
+                    </div>
+                    <div class="sub-1" data-aos="fade-down" data-aos-duration="1500">
+                        <img src="/finexo.html/w4.png" alt="">
+                        <h2><a href="">Unlimited Repair Warrenty</a></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel architecto necessitatibus adipisci dolorem dolorum asperiores?</p>
+                        <h5></h5>
+                                        
+                    </div>
+                    <div class="sub-1" data-aos="fade-right" data-aos-duration="1500">
+                        <img src="/finexo.html/w1.png" alt="">
+                        <h2><a href="">Insurence Support</a></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel architecto necessitatibus adipisci dolorem dolorum asperiores?</p>
+                        <h5></h5>
+                                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="article-3">
+                <div class="menu">
+                  <p>Checkout the Latest Cars</p>
+                  <h1>Newest Cars</h1>
+                  <div class="minimize">
+                    <h5></h5>
+                  </div>
+                </div>
+                <div class="main-car">
+                    <div class="car">
+                       <div class="img">
+                         <img src="/car-model-img/ncm1.png" alt="">
+                       </div>
+                       <div class="content">
+                         <h3><a href="">chevrole camaro za100</a></h3>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque accusantium excepturi autem tempora quidem sunt sit? Expedita minus earum vitae facere voluptatem tempora delectus.</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reiciendis quam illo laborum?</p>
+                         <div class="attern">
+                            <a href="">view more</a>
+                         </div>
+                       </div>
+                    </div>
+                    <div class="car">
+                        <div class="img">
+                          <img src="/car-model-img/ncm2.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3><a href="">bmw series-3 wagon</a></h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque accusantium excepturi autem tempora quidem sunt sit? Expedita minus earum vitae facere voluptatem tempora delectus.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia a fugiat eos minima.</p>
+                          <div class="attern">
+                            <a href="">view more</a>
+                         </div>
+                        </div>
+                     </div>
+                     <div class="car">
+                        <div class="img">
+                          <img src="/car-model-img/ncm3.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3><a href="">ferrai 488 superfast</a></h3>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque accusantium excepturi autem tempora quidem sunt sit? Expedita minus earum vitae facere voluptatem tempora delectus.</p>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore illo excepturi odit consectetur.</p>
+                          <div class="attern">
+                            <a href="">view more</a>
+                         </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="article-4">
+                
+                <div class="menu-1">
+                    <p>Checkout the Featured Cars</p>
+                    <h1>Featured Cars</h1>
+                    <div class="minimize-1">
+                      <h5></h5>
+                    </div>
+                </div>
+                <div class="feature-car" >
+                    <div class="modelcar" >
+                        <div class="car-img"data-aos="fade-up" data-aos-duration="1000"data-aos-easing="linear" >
+                            <img src="/car-model-img/fc1.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">bmw 6-series gran coupe</a></h1>
+                        <p>$89,395</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img" data-aos="fade-down" data-aos-duration="1800" data-aos-easing="linear" >
+                            <img src="/car-model-img/fc2.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Chevrolet Camaro WMV20</a></h1>
+                        <p>$66,575</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img" data-aos="fade-up" data-aos-duration="2000"data-aos-easing="linear">
+                            <img src="/car-model-img/fc3.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Lamborghini V520</a></h1>
+                        <p>$125,250</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img" data-aos="fade-down" data-aos-duration="2300" data-aos-easing="linear">
+                            <img src="/car-model-img/fc4.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Audi A3 Sedan</a></h1>
+                        <p>$95,500</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img"  data-aos="fade-down" data-aos-duration="1000"data-aos-easing="linear">
+                            <img src="/car-model-img/fc5.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Infiniti Z5</a></h1>
+                        <p>$36,850</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img" data-aos="fade-up" data-aos-duration="1500"data-aos-easing="linear">
+                            <img src="/car-model-img/fc6.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Porsche 718 Cayman</a></h1>
+                        <p>$48,500</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img"  data-aos="fade-down" data-aos-duration="1800" data-aos-easing="linear">
+                            <img src="/car-model-img/fc7.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">BMW 8-Series Coupen</a></h1>
+                        <p>$56,000</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+
+
+                    <div class="modelcar">
+                        <div class="car-img" data-aos="fade-up" data-aos-duration="2300" data-aos-easing="linear">
+                            <img src="/car-model-img/fc8.png" alt="">
+                        </div>
+
+                        <div class="content-p">
+                            <p>Model: 2017 3100 Mi 240HP Automatic</p>
+                        </div>
+
+                        <h1><a href="">Audi A3 Sedan</a></h1>
+                        <p>$75,800</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="article-5">
+                  
+                <div class="menu-1">
+                    <h1>What Our Clients Say</h1>
+                    <div class="minimize-2">
+                      <h5></h5>
+                    </div>
+                </div>
+                <div class="main-client">
+                    <div class="client" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
+                        <img src="/car-model-img/c2.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti repellendus doloribus distinctio laudantium neque consequatur rerum minus tenetur quas.</p>
+                        <h3><a href="">romi rain</a></h3>
+                        <h3>london</h3>
+                    </div>
+                    <div class="client" data-aos="fade-down" data-aos-duration="1200" data-aos-easing="linear">
+                        <img src="/car-model-img/c3.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti repellendus doloribus distinctio laudantium neque consequatur rerum minus tenetur quas.</p>
+                        <h3><a href="">jhon doe</a></h3>
+                        <h3>washington</h3>
+                    </div>
+                    <div class="client" data-aos="fade-up" data-aos-duration="800" data-aos-easing="linear">
+                        <img src="/car-model-img/c1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti repellendus doloribus distinctio laudantium neque consequatur rerum minus tenetur quas.</p>
+                        <h3><a href="">tomas lili</a></h3>
+                        <h3>new york</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="article-6">
+                <div class="logo" data-aos="fade-left" data-aos-duration="2000">
+                   <a href=""> <img src="/car-model-img/br1.png" alt=""></a>
+                    <a href=""><img src="/car-model-img/br2.png" alt=""></a>
+                    <a href=""><img src="/car-model-img/br3.png" alt=""></a>
+                    <a href=""><img src="/car-model-img/br4.png" alt=""></a>
+                    <a href=""><img src="/car-model-img/br5.png" alt=""></a>
+                    <a href=""><img src="/car-model-img/br6.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="article-7">
+                <div class="main-footer">
+                    <div class="foot-1">
+                        <h2>carvilla</h2>
+                        <div class="p-tag">
+                            <p>Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        <p>info@themesine.com</p>
+                        <p>+1 (885) 2563154554</p>
+                    </div>
+                    <div class="foot-2">
+                        <h3>About Devloon</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">carrer</a></li>
+                            <li><a href="">Terms of service</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-3">
+                        <h3>top brands</h3>
+                        <ul>
+                            <li><a href="">bmw</a></li>
+                            <li><a href="">Lamborghini</a></li>
+                            <li><a href="">Camaro</a></li>
+                            <li><a href="">audi</a></li>
+                            <li><a href="">Infiniti</a></li>
+                            <li><a href="">Nissan</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-4">
+                        
+                        <ul>
+                            <li><a href="">Ferrari</a></li>
+                            <li><a href="">Porsche</a></li>
+                            <li><a href="">Land Rover</a></li>
+                            <li><a href="">Aston Martin</a></li>
+                            <li><a href="">Mersedes</a></li>
+                            <li><a href="">Opel</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-5">
+                        <h3>news letter</h3>
+                        <p>Subscribe to get latest news update and informations</p>
+                        <form action="">
+                            <input type="email" placeholder="add mail" id="umail" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+    $(document).ready(function(){
+        $('.main-car').slick({
+        dots: true,
+        arrow: true,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+    AOS.refresh()
+    })    
+   
+    </script>
+</body>
+</html>
